@@ -22,6 +22,15 @@ public class MyWorld extends World {
         addObject(scoreLabel, 50, 50);
         
         createApple();
+        if(levels == 3)
+        {
+            createCherries();
+        }
+        if(levels ==5) 
+        {
+            createStrawberries();
+        }
+        
     }
     
     public void gameOver()

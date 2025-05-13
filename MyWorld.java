@@ -22,15 +22,8 @@ public class MyWorld extends World {
         addObject(scoreLabel, 50, 50);
         
         createApple();
-        if(level == 3)
-        {
-            createCherries();
-        }
-        if(level == 5) 
-        {
-            createStrawberries();
-        }
-        
+        createCherries();
+        createStrawberries();
     }
     
     public void gameOver()
@@ -46,6 +39,7 @@ public class MyWorld extends World {
         if (score % 5 == 0)
         {
             level++;
+            Elephant.eleSpeed++;
         }
     }
     
@@ -59,7 +53,7 @@ public class MyWorld extends World {
         apple.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
-        addObject(apple, x, y);
+        addObject(apple, x, y);            
     }
     public void createCherries()
     {

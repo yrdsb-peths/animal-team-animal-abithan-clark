@@ -52,4 +52,20 @@ public class MyWorld extends World {
         int y = 0;
         addObject(apple, x, y);
     }
+    public void createCherries()
+    {
+        Cherries cherries = new Cherries();
+        cherries.setSpeed(level);
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(cherries, x, y);
+    }
+    public void createStrawberries()
+    {
+        Strawberries strawberries = new Strawberries();
+        strawberries.setSpeed(level);
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(strawberries, x, y);
+    }
 }

@@ -101,7 +101,7 @@ public class Elephant extends Actor
         {
             removeTouching(Strawberries.class);
             MyWorld world = (MyWorld) getWorld();
-            world.createStrawBerries();
+            world.createStrawberries();
             world.increaseScore();
             elephantSound.play();
         }

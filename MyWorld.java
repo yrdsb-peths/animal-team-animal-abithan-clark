@@ -22,11 +22,11 @@ public class MyWorld extends World {
         addObject(scoreLabel, 50, 50);
         
         createApple();
-        if(levels == 3)
+        if(level == 3)
         {
             createCherries();
         }
-        if(levels ==5) 
+        if(level == 5) 
         {
             createStrawberries();
         }

@@ -13,7 +13,12 @@ public class Strawberries extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     int speed = 1;
-
+    
+    public Strawberries()
+    {
+        setImage("images/stawberry.png");
+    }
+    
     public void act()
     {
         int x = getX();
